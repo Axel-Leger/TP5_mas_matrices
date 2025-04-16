@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calificaciones de Alumnos</h1>
+    <h2>Ingrese un Alumno:</h2>
+
+    <form onsubmit="cargarNota(event)">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese los nombres">
+        </div>
+        <div>
+            <label for="materia">Materia:</label>
+            <input type="text" id="materia" placeholder="Ingrese la materia">
+        </div>
+        <div>
+            <label for="nota">Nota:</label>
+            <input type="text" id="nota" placeholder="Ingrese la nota">
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <h2>Listado de Alumnos:</h2>
+    <button onclick="MostrarAlumnos()">Mostrar Alumnos</button>
+    <pre id="lista"></pre>
+
+
+    <script src="../static/scripts.js"></script>
+</body>
+</html>
